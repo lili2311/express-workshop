@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/lili2311/express-workshop#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
   }
 }
