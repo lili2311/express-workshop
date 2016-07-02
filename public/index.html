@@ -15,8 +15,13 @@
         <main>
             <div class="entry-container">
                 <form action="/create-post" method="POST">
-                    <textarea name="blogpost" rows="10" cols="14">
-                    </textarea>
+                    <label> Blog Title
+                        <input type="text" name="blogpostTitle"></input>
+                    </label>
+                    <lable>Blog Post
+                        <textarea name="blogpost" rows="10" cols="14">
+                        </textarea>
+                    </label>
                     <button type="submit">Send</button>
                 </form>
             </div>
