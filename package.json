@@ -4,7 +4,9 @@
   "description": "<img src=\"https://github.com/node-girls/workshop-cms/blob/master/readme-images/logo.png?raw=true\">",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -19,9 +21,11 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "mustache-express": "^1.2.2"
+    "mustache-express": "^1.2.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "nodemon": "^1.9.2"
-  }
+  },
+  "snyk": true
 }
